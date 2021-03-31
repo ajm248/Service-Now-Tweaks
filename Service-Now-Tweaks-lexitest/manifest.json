@@ -1,0 +1,12 @@
+{
+  "name": "STC Service Now Tweaks LexiTest",
+  "version": "5.0",
+  "description": "STC-Specific modifications of Service Now.",
+  "manifest_version": 2,
+  "content_scripts": [{
+  "matches": ["https://yale.service-now.com/*", "https://yaletest.service-now.com/*"],
+  "run_at": "document_end",
+  "js": ["jquery-3.6.0.min.js", "core.js"],
+  "all_frames": true
+  }]
+}
